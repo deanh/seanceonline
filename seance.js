@@ -1,3 +1,10 @@
+/* Needs tone.js
+ * https://cdn.rawgit.com/mohayonao/web-audio-api-shim/master/build/web-audio-api-shim.min.js
+ * https://cdnjs.cloudflare.com/ajax/libs/fetch/1.0.0/fetch.min.js
+ * https://unpkg.com/tone
+ *
+ */
+
 function makeSynth() {
     let envelope = {
         attack: 2,
