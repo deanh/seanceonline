@@ -1,42 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <style> 
-            body {
-                background-image: url('bg2.gif');
-                background-size: cover;
-                height: 100vh;
-                padding:0;
-                margin:0;
-                color: antiquewhite;
-                font: 1em sans-serif;
-            }
-            div#info {
-                padding: 1em 2em;
-            }
-            a { 
-                color: aliceblue;
-            }
-        </style>
+        <link rel="stylesheet" href="style.css" />
     </head>
 <body>
-    <div id="info">
+    <div id="main">
     </div>
-    <script>
-        let suits = ["wands", "coins", "swords", "cups"];
-        let ranks = [...Array(9).keys()].map(i => i + 2).concat(["ace", "page", "knight", "queen", "king"]);
-
-        let card_imgs = [...Array(22).keys()].map(c => c + ".jpg");   // 0-21 for major arcana
-        for (let s of suits) {
-            card_imgs = card_imgs.concat(ranks.map(r => s + "-" + r + ".jpg"))
-        }
-
-        let base_uri = "./tarot/";
-
-        function randomCardJpg() {
-            let idx = Math.floor(Math.random() * card_imgs.length);
-            return base_uri + card_imgs[idx];
-        }
-    </script>
+    <script type="module" src="app.js"></script>
 </body>
 </html>

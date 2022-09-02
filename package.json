@@ -1,5 +1,13 @@
 {
-  "dependencies": {
-    "light-server": "^2.9.1"
+  "name": "seanceonline.de",
+  "source": "./index.html",
+  "scripts": {
+    "start": "parcel watch ./index.html & light-server -s dist/",
+    "build": "parcel build",
+    "assets": "cp -r public/* dist"
+  },
+  "devDependencies": {
+    "light-server": "^2.9.1",
+    "parcel": "^2.7.0"
   }
 }

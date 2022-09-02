@@ -9,7 +9,14 @@ body {
 }
 .card {
     max-width: 200px;
-    padding: 1em;
+}
+.draggable {
+    /* Indicate the element draggable */
+    cursor: move;
+    /* It will be positioned absolutely */
+    position: absolute;
+    /* Doesn't allow to select the content inside */
+    user-select: none;
 }
 div#main {
     padding: 1em 2em;
