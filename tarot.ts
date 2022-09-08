@@ -40,7 +40,7 @@ export class Tarot {
     let name = this.randomCardSlug();
     img.src = this.cardJpgUrl(name);
     img.className = "card";
-    img.setAttribute('draggable', false);
+    img.setAttribute('draggable', 'false');
     img.id = name;
     parent.appendChild(img);
 
